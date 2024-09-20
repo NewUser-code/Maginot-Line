@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #4c4c4c;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    height: 85%;
+    width: 85%;
+    background-color: #4c4c4c;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: width 1s, height 1s;
+    cursor: crosshair;
+}
+
+.box:hover {
+    width: 200px;
+    height: 500px;
+    background-color: red;
+    transition-duration: 5s;
+}
+
+.signature {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    font-size: small;
+}
+
+.info {
+    opacity: 0;
+    font-size: 1rem;
+    color: white;
+    transition: opacity 0.5s ease;
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.box:hover .info {
+    opacity: 1;
+}
+
+.box:hover .signature {
+    opacity: 0;
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-style: Bold;
+}
